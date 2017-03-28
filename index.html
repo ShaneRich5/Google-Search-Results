@@ -2,54 +2,162 @@
 <head>
     <meta charset="UTF-8">
     <title>Google</title>
+    <link rel="icon" href="images/google-favicon.png">
     <link rel="stylesheet" href="dist/bundle.css">
 </head>
 <body>
     <header>
-        <ul class="right">
-            <li><a href="https://mail.google.com/mail/?tab=wm">Gmail</a></li>
-            <li><a href="https://www.google.com/imghp?hl=en&tab=wi&ei=qvu9WP25LoncmwGCxbjgAg&ved=0EKouCBMoAQ">Images</a></li>
-            <li>
-                <div class="grid-dots">
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                </div>
-            </li>
-            <li>
-                <button id="sign-in">Sign in</button>
-            </li>
-        </ul>
+        <nav class="navbar">
+            <img class="logo" src="images/google.png" alt="google logo">
+            <div class="search-bar search">
+                <input type="text">
+                <img src="images/microphone.png" alt="search microphone">
+            </div>
+            <ul class="right">
+                <li>
+                    <div class="grid-dots">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                </li>
+                <li>
+                    <button id="sign-in">Sign in</button>
+                </li>
+            </ul>
+        </nav>
+        <section class="options search">
+            <ul class="categories">
+                <li class="current">All</li>
+                <li>Videos</li>
+                <li>News</li>
+                <li>Shopping</li>
+                <li>Maps</li>
+                <li>More</li>
+            </ul>
+            <ul class="settings">
+                <li>Settings</li>
+                <li class="btn">Tools</li>
+            </ul>
+        </section>
     </header>
-
     <main>
-        <img class="logo" src="images/google.png" alt="google logo">
-        <div class="search-bar">
-            <input type="text">
-            <img src="images/microphone.png" alt="search microphone">
-        </div>
-        <div class="button-bar">
-            <button>Google Search</button>
-            <button>I'm Feeling Lucky</button>
+        <div class="results-counter">About 2,950,000 results (0.81 seconds)</div>
+
+        <section class="results-list">
+            <div class="result-item">
+                <h3><a href="#">With zero coding experience, artist building 180 webpages in 180 days</a></h3>
+                <p class="link">https://arstechnica.com/.../with-zero-coding-experience-artist-building-180-webpages-...</p>
+                <p class="description">Jul 26, 2013 - The next day, she built another, and she has kept building one new webpage every single day. Instead of beginning with "Hello World," a class, ...</p>
+            </div>
+
+            <div class="result-item">
+                <h3><a href="#">Google Homepage</a></h3>
+                <p class="link">swatikumar16.github.io/google-homepage/
+</p>
+                <p class="description">With zero coding experience, artist building 180 webpages . ... days ago, having never done any programming in her life, Jennifer Dewalt built her first webpage.</p>
+            </div>
+
+            <div class="result-item">
+                <h3><a href="#">build this webpage - Google Search</a></h3>
+                <p class="link">https://aryavansh.github.io/googleresults/
+</p>
+                <p class="description">117 days ago, having never done any programming in her life, Jennifer Dewalt built her first webpage. The next day, she built another, and she ... I'm learning to ...</p>
+            </div>
+
+            <div class="result-item">
+                <h3><a href="#">I'm learning to code by building 180 websites in 180 ... - Jennifer Dewalt</a></h3>
+                <p class="link">blog.jenniferdewalt.com/post/.../im-learning-to-code-by-building-180-websites-in</p>
+                <p class="description">Jul 24, 2013 - Build a different website every day for 180 consecutive days. Every website must be accompanied by a blog post. Any code I write must be ...</p>
+            </div>
+
+            <div class="result-item">
+                <h3><a href="#">RegExr: Learn, Build, & Test RegEx</a></h3>
+                <p class="link">regexr.com/</p>
+                <p class="description">Regular expression tester with syntax highlighting, contextual help, video tutorial, reference, and searchable community patterns.
+You visited this page on 3/27/17.</p>
+            </div>
+
+            <div class="result-item">
+                <h3><a href="#">gulp.js</a></h3>
+                <p class="link">gulpjs.com/</p>
+                <p class="description">Build system automating tasks: minification and copying of all JavaScript files, static images, capable of watching files to automatically rerun the task when a file ...
+You visited this page.</p>
+            </div>
+
+            <div class="result-item">
+                <h3><a href="#">WIX.com: Free Website Builder | Create a Free Website</a></h3>
+                <p class="link">www.wix.com/</p>
+                <p class="description">Create a free website with Wix.com. Customize with Wix' free website builder, no coding skills needed. Choose a design, begin customizing and be online today!</p>
+            </div>
+
+            <div class="result-item">
+                <h3><a href="#">Squarespace: Build a Website</a></h3>
+                <p class="link">https://www.squarespace.com/</p>
+                <p class="description">Squarespace is the all-in-one solution for anyone looking to create a beautiful website. Domains, eCommerce, hosting, galleries, analytics, and 24/7 support all ...</p>
+            </div>
+
+            <div class="result-item">
+                <h3><a href="#">Make a Website | Codecademy</a></h3>
+                <p class="link">https://www.codecademy.com/learn/make-a-website</p>
+                <p class="description">Course Outcomes. You'll build four simple websites using web development fundamentals, including HTML5/CSS3 and Bootstrap. You'll learn to understand ...</p>
+            </div>
+
+            <div class="result-item">
+                <h3><a href="#">Build Your Own Webpage | Codecademy</a></h3>
+                <p class="link">https://www.codecademy.com/courses/web-beginner-en-LceTK/
+</p>
+                <p class="description">Build Your Own Webpage. What you'll be making. Before we ask you to write a bunch of code, we think it's helpful for you to see exactly what you'll be making in ...</p>
+            </div>
+        </section>
+        <section class="search-related">
+            <h3>Searches related to build this webpage</h3>
+            <div class="related-links">
+                <ul>
+                    <li><a href="#">jennifer dewalt linkedin</a></li>
+                    <li><a href="#">jen dewalt</a></li>
+                    <li><a href="#">yumhacker</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">google logo</a></li>
+                    <li><a href="#">codepen</a></li>
+                    <li><a href="#">github</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="pagination">
+            <table>
+                <tbody><tr>
+                    <td class="nav"><span class="nav00"></span></td>
+                    <td class="nav"><span class="nav01"></span><span class="pages00">1</span></td>
+                    <td class="nav"><a class="pages" href="#"><span class="nav02"></span><span class="next">2</span></a></td>
+                    <td class="nav"><a class="pages" href="#"><span class="nav02"></span><span class="next">3</span></a></td>
+                    <td class="nav"><a class="pages" href="#"><span class="nav02"></span><span class="next">4</span></a></td>
+                    <td class="nav"><a class="pages" href="#"><span class="nav02"></span><span class="next">5</span></a></td>
+                    <td class="nav"><a class="pages" href="#"><span class="nav02"></span><span class="next">6</span></a></td>
+                    <td class="nav"><a class="pages" href="#"><span class="nav02"></span><span class="next">7</span></a></td>
+                    <td class="nav"><a class="pages" href="#"><span class="nav02"></span><span class="next">8</span></a></td>
+                    <td class="nav"><a class="pages" href="#"><span class="nav02"></span><span class="next">9</span></a></td>
+                    <td class="nav"><a class="pages" href="#"><span class="nav02"></span><span class="next">10</span></a></td>
+                    <td class="nav navend"><a class="pages" href="#"><span class="nav03"></span><span class="next">Next</span></a></td>
+                </tr>
+            </tbody></table>
         </div>
     </main>
-
     <footer>
-        <ul class="left">
-            <li><a href="https://www.google.com/intl/en/ads/?fg=1">Advertising</a></li>
-            <li><a href="https://www.google.com/services/?fg=1">Business</a></li>
-            <li><a href="https://www.google.com/intl/en/about.html?fg=1">About</a></li>
-        </ul>
-        <ul class="right">
-            <li><a href="https://www.google.com/intl/en/policies/privacy/?fg=1">Privacy</a></li>
-            <li><a href="https://www.google.com/intl/en/policies/terms/?fg=1">Terms</a></li>
-            <li><a href="https://www.google.com/preferences?hl=en">Settings</a></li>
+        <p class="location">Springfield Gardens, New York - From your Internet address - <a href="#">Use precise location</a> - <a href="#">Learn more</a></p>
+        <ul>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Send feedback</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
         </ul>
     </footer>
     <script src="dist/bundle.js"></script>
